@@ -57,23 +57,23 @@
       </a>
       <button class="hamb" aria-label="Abrir menú" id="hamb">&#9776;</button>
       <nav class="menu" id="menu">
-        <a href="index.html#inicio">Inicio</a>
-        <a href="Productos.html">Productos</a>
-        <a href="Servicios.html">Servicios</a>
-        <a href="Contacto.html">Contacto</a>
+        <a href="index.html#inicio" class="menu__link">Inicio</a>
+        <a href="Productos.html" class="menu__link  menu__link--active">Productos</a>
+        <a href="Servicios.html" class="menu__link">Servicios</a>
+        <a href="Contacto.html" class="menu__link">Contacto</a>
       </nav>
     </div>
   </header>
 
   <!-- Encabezado de página -->
-  <section class="container section__product">
-    <p class="container__subtitle">Catálogo</p>
-    <h1 class="container__title">Productos</h1>
-    <p class="container__text">Soluciones avanzadas en purificación de agua para farmacéutica, laboratorios, hospitalario e industria.</p>
+  <section class="container section">
+    <p class="section__subtitle">Catálogo</p>
+    <h1 class="section__title">Productos</h1>
+    <p class="section__text">Soluciones avanzadas en purificación de agua para farmacéutica, laboratorios, hospitalario e industria.</p>
   </section>
 
   <!-- Grid de productos -->
-  <section class="container section__product">
+  <section class="container section">
     <div class="container__grid container__grid-3">
 
       <!-- 1) SHIFT -->
@@ -223,13 +223,12 @@
     </div>
   </section>
 
-  <!-- Footer -->
+   <!-- Footer -->
   <footer>
     <div class="container foot">
       <div>
-        <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px">
-          <img src="assets/grupo-hydro-logo-2025.png" alt="Grupo Hydro" style="height:34px;width:auto">
-          <strong style="font-size:1.05rem">Contacto</strong>
+        <div class="footer__brand">
+          <img class="footer__img" src="assets/grupo-hydro-logo-2025.png" alt="Grupo Hydro">
         </div>
         <div class="address">
 Tel: +52 800 1016 349
@@ -239,7 +238,7 @@ Alfonso Reyes 310-E, Col. Nexxus Residencial, Escobedo, Nuevo León, C.P. 66055
         </div>
         <div class="copy">© 2025 Grupo Hydro. Todos los derechos reservados. &nbsp; <a href="Aviso-de-Privacidad.html">Aviso de Privacidad</a></div>
       </div>
-      <div style="display:flex;justify-content:flex-end;align-items:flex-start">
+      <div class="footer__btn">
         <a class="btn btn-primary" href="Contacto.html">Contáctanos</a>
       </div>
     </div>
@@ -247,13 +246,5 @@ Alfonso Reyes 310-E, Col. Nexxus Residencial, Escobedo, Nuevo León, C.P. 66055
 
   <!-- WhatsApp floating -->
   <a class="wa" href="https://wa.me/528123208845" target="_blank" rel="noopener" aria-label="Chatea por WhatsApp">WhatsApp</a>
-
-  <!-- JS: menú móvil
-  <script>
-    const hamb = document.getElementById('hamb');
-    const menu = document.getElementById('menu');
-    hamb.addEventListener('click', () => menu.classList.toggle('show'));
-    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', ()=> menu.classList.remove('show')));
-  </script> -->
 </body>
 </html>

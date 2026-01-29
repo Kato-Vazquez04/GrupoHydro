@@ -17,84 +17,6 @@
   <meta property="og:image" content="https://grupohydro.net/assets/incio2-min.jpg">
   <meta name="robots" content="index,follow,max-image-preview:large">
 
-  <!-- <style>
-    :root{
-      --primary:#3f4fa3; --primary-700:#2f3d86; --secondary:#49a9c3;
-      --ink:#0f1a2c; --muted:#55607a; --bg:#f7f9fc; --card:#fff;
-      --radius:18px; --shadow:0 8px 24px rgba(15,26,44,.12);
-      --shadow-2:0 14px 40px rgba(15,26,44,.16);
-      --ring: rgba(73,169,195,.35);
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0}
-    body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial;color:var(--ink);background:var(--bg);line-height:1.55}
-    a{color:inherit;text-decoration:none}
-    img{max-width:100%;display:block}
-    .container{width:min(1200px,92vw);margin-inline:auto}
-
-    /* Header / Nav (igual que otras páginas) */
-    /* header{position:sticky;top:0;z-index:50;backdrop-filter:saturate(180%) blur(6px);background:rgba(255,255,255,.85);border-bottom:1px solid #e7edf6} */
-    /* .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0} */
-    /* .brand{display:flex;align-items:center;gap:12px} */
-    .brand--img{height:64px;width:auto}
-    @media (max-width:900px){ .brand--img{height:48px} }
-    /* .menu{display:flex;gap:20px;align-items:center} */
-    /* .menu a{padding:8px 12px;border-radius:10px;font-weight:600;color:var(--primary-700)} */
-    .menu a:hover, .menu a.active{background:rgba(73,169,195,.12);color:var(--primary)}
-    /* .hamb{display:none;background:none;border:0;font-size:28px;line-height:1;color:var(--primary-700);cursor:pointer}
-    @media (max-width:900px){
-      .menu{position:fixed;inset:64px 0 auto 0;background:#fff;border-bottom:1px solid #e7edf6;display:none;flex-direction:column;padding:14px 18px;z-index:40}
-      .menu.show{display:flex}
-      .hamb{display:block}
-    } */
-
-    /* Utilities / Buttons */
-    /* section{padding:56px 0}
-    .page-title{font-size:clamp(26px,3.6vw,40px);margin:0 0 8px;color:var(--primary-700)}
-    .subtitle{font-weight:800;color:var(--secondary);text-transform:uppercase;letter-spacing:.12em;margin:0 0 6px} */
-    .section__lead{color:var(--muted)}
-    /* .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:14px;font-weight:700;border:2px solid transparent;cursor:pointer;transition:.2s ease;text-transform:uppercase;letter-spacing:.3px}
-    .btn-primary{background:var(--primary);color:#fff;box-shadow:var(--shadow)}
-    .btn-primary:hover{background:var(--primary-700);transform:translateY(-1px)}
-    .btn-outline{border-color:var(--secondary);color:var(--secondary)}
-    .btn-outline:hover{background:rgba(73,169,195,.12)} */
-
-    /* Grid */
-    .service__grid{display:grid;gap:22px}
-    .service__grid-2{grid-template-columns:1fr 1fr}
-    .service__grid-3{grid-template-columns:repeat(3,1fr)}
-    @media (max-width:1024px){ .service__grid-3{grid-template-columns:repeat(2,1fr)} }
-    @media (max-width:640px){ .service__grid-2, .service__grid-3{grid-template-columns:1fr} }
-
-    /* Cards */
-    .container__card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:24px}
-    .card--title{margin:0 0 10px;color:var(--primary)}
-    .card--text{margin:0 0 8px}
-    .card--list{margin:8px 0 0 18px;color:var(--muted)}
-    .service__hero{
-      background: radial-gradient(1200px 500px at 10% -10%, rgba(73,169,195,.18), transparent 60%),
-                  radial-gradient(1200px 500px at 110% 120%, rgba(63,79,163,.18), transparent 60%), #fff;
-      box-shadow:inset 0 1px 0 rgba(15,26,44,.05);
-    }
-
-    /* CTA */
-    .service__cta--band{
-      background:#0b1530;color:#fff;text-align:center;padding:64px 0;
-      box-shadow:inset 0 1px 0 rgba(255,255,255,.06)
-    }
-    /* .cta-band h2{color:#fff;margin:0 0 10px} */
-    /* Footer */
-    /* footer{background:#0b1530;color:#d9e3f7;padding:36px 0 24px;margin-top:52px}
-    footer a{color:#cfe9f5}
-    .foot{display:grid;gap:20px;grid-template-columns:1.8fr .2fr}
-    @media (max-width:900px){ .foot{grid-template-columns:1fr} }
-    .address{white-space:pre-line}
-    .copy{margin-top:12px;font-size:.92rem;color:#b8c4df} */
-
-    /* WhatsApp floating */
-    /* .wa{position:fixed;right:18px;bottom:18px;z-index:60;background:#25D366;color:#fff;border-radius:999px;padding:12px 16px;box-shadow:var(--shadow-2);font-weight:800}
-    .wa:hover{filter:brightness(.95);transform:translateY(-1px)} */
-  </style> -->
 </head>
 <body>
 
@@ -106,16 +28,16 @@
       </a>
       <button class="hamb" aria-label="Abrir menú" id="hamb">&#9776;</button>
       <nav class="menu" id="menu">
-        <a href="index.html#inicio">Inicio</a>
-        <a href="Productos.html">Productos</a>
-        <a href="Servicios.html" class="active">Servicios</a>
-        <a href="Contacto.html">Contacto</a>
+        <a href="index.html#inicio" class="menu__link">Inicio</a>
+        <a href="Productos.html" class="menu__link">Productos</a>
+        <a href="Servicios.html" class="menu__link menu__link--active">Servicios</a>
+        <a href="Contacto.html" class="menu__link">Contacto</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero/Intro -->
-  <section class="service__hero section__product">
+  <section class="service__hero section">
     <div class="container">
       <p class="section__subtitle">Servicios</p>
       <h1 class="section__title">Soluciones llave en mano</h1>
@@ -124,11 +46,11 @@
   </section>
 
   <!-- Tratamiento de agua -->
-  <section class="container section__product">
+  <section class="container section">
     <div class="card">
-      <h3 class="card--title">Tratamiento de agua (Ósmosis inversa &amp; UV)</h3>
-      <p class="card--text">Plantas de ósmosis inversa, ultrafiltración y desinfección UV para agua ultrapura y potabilización.</p>
-      <ul class="card--list">
+      <h3>Tratamiento de agua (Ósmosis inversa &amp; UV)</h3>
+      <p>Plantas de ósmosis inversa, ultrafiltración y desinfección UV para agua ultrapura y potabilización.</p>
+      <ul>
         <li>Diseño y dimensionamiento de trenes de membranas</li>
         <li>Monitoreo de rechazo, recuperación y calidad</li>
         <li>Post-tratamiento y almacenamiento seguro</li>
@@ -137,12 +59,12 @@
   </section>
 
   <!-- Filtración y suavización / Bombeo y presurización -->
-  <section class="container section__product">
+  <section class="container section">
     <div class="service__grid service__grid-2">
       <div class="card">
-        <h3 class="card--title">Filtración y suavización</h3>
-        <p class="card--text">Filtros multimedia, cartucho, carbón activado y suavizadores de resina.</p>
-        <ul class="card--list">
+        <h3>Filtración y suavización</h3>
+        <p>Filtros multimedia, cartucho, carbón activado y suavizadores de resina.</p>
+        <ul>
           <li>Reducción de sólidos, cloro y dureza</li>
           <li>Medios filtrantes certificados</li>
           <li>Programas de retrolavado y reemplazo de resina</li>
@@ -150,9 +72,9 @@
       </div>
 
       <div class="card">
-        <h3 class="card--title">Bombeo y presurización</h3>
-        <p class="card--text">Equipos de presión constante, bombas sumergibles y tableros de control.</p>
-        <ul class="card--list">
+        <h3>Bombeo y presurización</h3>
+        <p>Equipos de presión constante, bombas sumergibles y tableros de control.</p>
+        <ul>
           <li>Selección y cálculos de caudal/presión</li>
           <li>Instalación eléctrica e hidráulica</li>
           <li>Mantenimiento preventivo y correctivo</li>
@@ -162,11 +84,11 @@
   </section>
 
   <!-- Control SHIFT -->
-  <section class="container section__product">
+  <section class="container section">
     <div class="card">
-      <h3 class="card--title">Control SHIFT (PLC + HMI)</h3>
-      <p class="card--text">Controlador PLC con HMI de 3” y monitor de resistividad; operación silenciosa para ambientes sensibles.</p>
-      <ul class="card--list">
+      <h3>Control SHIFT (PLC + HMI)</h3>
+      <p>Controlador PLC con HMI de 3” y monitor de resistividad; operación silenciosa para ambientes sensibles.</p>
+      <ul>
         <li>Automatización de plantas</li>
         <li>Alarmas y registro de parámetros</li>
         <li>Integración con equipos existentes</li>
@@ -175,23 +97,22 @@
   </section>
 
   <!-- CTA -->
-  <section class="service__cta--band section__product">
+  <section class="cta-band section">
     <div class="container">
-      <h2 class="section__title" style="color:#fff">¿Listo para optimizar tu sistema?</h2>
-      <p class="section__lead" style="color:#e6eefc">Cuéntanos tu requerimiento y diseñamos la solución adecuada.</p>
-      <div style="margin-top:12px">
+      <h2 class="section__title title--white">¿Listo para optimizar tu sistema?</h2>
+      <p class="lead">Cuéntanos tu requerimiento y diseñamos la solución adecuada.</p>
+      <div>
         <a class="btn btn-primary" href="Contacto.html">Solicitar cotización</a>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+   <!-- Footer -->
   <footer>
     <div class="container foot">
       <div>
-        <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px">
-          <img src="assets/grupo-hydro-logo-2025.png" alt="Grupo Hydro" style="height:34px;width:auto">
-          <strong style="font-size:1.05rem">Contacto</strong>
+        <div class="footer__brand">
+          <img class="footer__img" src="assets/grupo-hydro-logo-2025.png" alt="Grupo Hydro">
         </div>
         <div class="address">
 Tel: +52 800 1016 349
@@ -201,7 +122,7 @@ Alfonso Reyes 310-E, Col. Nexxus Residencial, Escobedo, Nuevo León, C.P. 66055
         </div>
         <div class="copy">© 2025 Grupo Hydro. Todos los derechos reservados. &nbsp; <a href="Aviso-de-Privacidad.html">Aviso de Privacidad</a></div>
       </div>
-      <div style="display:flex;justify-content:flex-end;align-items:flex-start">
+      <div class="footer__btn">
         <a class="btn btn-primary" href="Contacto.html">Contáctanos</a>
       </div>
     </div>
