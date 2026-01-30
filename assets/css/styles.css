@@ -278,7 +278,7 @@ footer {
   background: #0b1530;
   background-image:
     linear-gradient(180deg, rgba(15, 26, 44, 0.55), rgba(15, 26, 44, 0.55)),
-    url("../incio2-min.jpg");
+    url("../img/incio2-min.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -365,7 +365,7 @@ footer {
   overflow: hidden;
   padding: 0;
   min-height: 320px;
-  background: #0b1530 url("../MG_5154-min.jpg") center/cover no-repeat;
+  background: #0b1530 url("../img/MG_5154-min.jpg") center/cover no-repeat;
   border: 0;
   box-shadow: var(--shadow-2);
 }
@@ -407,7 +407,7 @@ footer {
 }
 /* 3 columnas equipo */
 .team-3 .col.image {
-  background: #0b1530 url("../GRUPO-HYDRO2.jpg") center/cover no-repeat;
+  background: #0b1530 url("../img/GRUPO-HYDRO2.jpg") center/cover no-repeat;
   min-height: 320px;
   border-radius: var(--radius);
   position: relative;
