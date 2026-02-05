@@ -237,17 +237,61 @@ footer {
 .footer__btn {
   display:flex;
   justify-content:flex-end;
-  align-items:flex-start
+  align-items:flex-start;
+}
+@media (max-width: 900px) {
+  .footer__btn {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
+
 .copy {
-  margin-top: 12px;
-  font-size: 0.92rem;
+  
+  margin-top: 20px;
+  font-size: 0.60rem;
   color: #b8c4df;
+  text-align: center;
 }
 .address {
   white-space: pre-line;
 }
+.footer_social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+@media (min-width: 980px) {
+  .footer_social{
+    align-items: start;
+  }
+}
+.footer_social{
+  color: var(--muted);
+}
+.social__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 0; 
+  margin: 0;
+}
+@media (max-width: 980px) {
+  .social__list{
+    gap: 50px;
+    margin-bottom: 20px;
+  }
+}
+
+.social__item { 
+  list-style: none; 
+  display: inline-flex;
+}
+
 
 /* WhatsApp floating */
 .wa {
