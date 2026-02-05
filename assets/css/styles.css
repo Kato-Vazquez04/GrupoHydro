@@ -6,10 +6,12 @@
   --muted: #55607a;
   --bg: #f7f9fc;
   --card: #ffffff;
+   --socialcolor: #979595;
   --ring: rgba(73, 169, 195, 0.35);
   --radius: 18px;
   --shadow: 0 8px 24px rgba(15, 26, 44, 0.12);
   --shadow-2: 0 14px 40px rgba(15, 26, 44, 0.16);
+ 
 }
 * {
   box-sizing: border-box;
@@ -285,8 +287,23 @@ footer {
     gap: 50px;
     margin-bottom: 20px;
   }
+  .social__list img {
+    width: 42px;
+  }
 }
-
+.social__list img {
+  width: 32px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+@media (max-width: 480px) {
+  .social__list img {
+    width: 50px;
+  }
+}
+.social__list img:hover {
+  transform: scale(1.4);
+}
 .social__item { 
   list-style: none; 
   display: inline-flex;
